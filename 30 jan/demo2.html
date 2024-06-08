@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+div{height: 100px; width: 100%; background: orange;}
+    </style>
+</head>
+<body>
+<div></div>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+    window.onload=setTimeout(function show(){
+        alert('hello ducat')
+    },5000)
+    */ 
+
+    window.onload=setTimeout(function show(){
+      $(document).ready(function(){
+        $("div").slideUp(3000)
+      })
+    },5000)
+
+            </script>
+</body>
+</html>

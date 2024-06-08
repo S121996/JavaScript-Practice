@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{height: 100px; width: 100px; background: orange;position: relative;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>click</button>
+    <div>
+      hello
+    </div>
+    <script>
+
+$(document).ready(function(){
+$("button").click(function(){
+    $("div").animate({left:"800px"},4000)
+    $("div").animate({top:"400px"},4000);
+    $("div").animate({fontSize:"40px"},4000)
+})
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    div{width: 50%; margin: 50px 25%; padding: 20px;
+    box-shadow: 0px 0px 9px black; text-align: center;}
+    input{text-align: center;}
+    table{width: 100%;}
+    </style>
+</head>
+<body>
+   <script src="jquery.js"></script>
+<div>
+    <input type="text" name="n" placeholder="Search Data" id="myinput">
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>name</th>
+                <th>age</th>
+                <th>City</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="mybody">
+            <tr>
+                <td>1</td>
+                <td>amit</td>
+                <td>20</td>
+                <td>noida</td>
+                <td>amit@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>amit5</td>
+                <td>25</td>
+                <td>noida5</td>
+                <td>amit5@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>amit2</td>
+                <td>22</td>
+                <td>noida2</td>
+                <td>amit2@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>hari</td>
+                <td>27</td>
+                <td>mathura</td>
+                <td>hari@gmail.com</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>rahul</td>
+                <td>30</td>
+                <td>agra</td>
+                <td>rahul@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>amit</td>
+                <td>20</td>
+                <td>noida</td>
+                <td>amit@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+$(document).ready(function(){
+$("#myinput").keyup(function(){
+    let result=$(this).val().toLowerCase()
+    // console.log(result);
+   
+    $("#mybody tr").filter(function(){
+       $(this).toggle($(this).text().toLowerCase().indexOf(result)>-1) 
+    })
+    
+})
+
+})
+
+
+
+
+</script>
+</body>
+</html>

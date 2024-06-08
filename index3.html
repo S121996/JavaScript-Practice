@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+span{float: left; padding: 7px; background: orange;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+<button>Hide</button>
+<button>Show</button>
+<p>
+<span>welcome</span>
+<span>To</span>
+<span>Ducat</span>
+<span>Lorem,  .</span>
+<span>ipsum</span>
+<span>dolor</span>
+<span>welcome</span>
+<span>india</span>
+
+</p>
+<script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("span").last().hide(1000,function(){
+            $(this).prev().last().hide(1000,arguments.callee)
+        });
+        
+    })
+})
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("span").first().show(2000,function(){
+            $(this).next().first().show(2000,arguments.callee)
+        });
+        
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$(document).ready(function(){
+ $("button").click(function(){
+    $("p").hide(4000,function(){
+        alert("hello users")
+    })
+    
+ })  
+})
+*/ 
+
+
+
+
+</script>
+</body>
+</html>

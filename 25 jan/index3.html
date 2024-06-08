@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button>click</button>
+  <!-- <p>Lorem ipsum <b> hello users </b>dolor <i> this is italic</i> sit.</p> -->
+   <input type="text" name="n" id="myinput">
+   
+   <script>
+
+$(document).ready(function(){
+$("button").click(function(){
+// alert($("p").text())  
+// alert($("p").html()) 
+alert($("#myinput").val()) 
+})
+})
+
+    </script>
+</body>
+</html>

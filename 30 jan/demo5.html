@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<button>click</button>
+<p>Lorem ipsum dolor sit.</p>
+<p class="data">Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p>Lorem ipsum dolor sit.</p>
+<p class="data">Lorem ipsum dolor sit.</p>
+
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+$("button").click(function(){
+    // $("p").last().css({background:"orange"})
+    // $("p").prev().last().css({background:"orange"})
+    // $("p").first().css({background:"orange"})
+    // $("p").next().first().css({background:"orange"})
+    $("p").eq(3).css({background:"orange"})
+    $("p").filter(".data").css({background:"orange"})
+
+})
+
+
+
+
+
+
+})
+
+            </script>
+</body>
+</html>

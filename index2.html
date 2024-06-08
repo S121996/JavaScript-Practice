@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+<!-- <button id="a">hide</button>
+<button id="b">Show</button> -->
+<button>Hide/Show</button>
+<h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+
+<script>
+    /*
+$(document).ready(function(){
+ $("#a").click(function(){
+    $("h2").hide(4000)
+ })
+ $("#b").click(function(){
+    $("h2").show(4000)
+ })
+})
+
+*/ 
+$(document).ready(function(){
+    $("button").dblclick(function(){
+        $("h2").toggle(4000);
+    })
+})
+
+
+
+
+
+</script>
+</body>
+</html>

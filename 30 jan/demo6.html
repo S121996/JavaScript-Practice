@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+div{height: 300px; width: 400px; border: 7px solid blue;}
+    </style>
+</head>
+<body>
+<button>click</button>
+<div></div>
+<p></p>
+
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+$("button").click(function(){
+let result;
+//  result= $("div").width()
+// result= $("div").height()
+// result= $("div").innerWidth()
+result= $("div").innerHeight()
+// result= $("div").outerHeight()
+// result= $("div").outerWidth()
+$("p").html(result)
+})
+
+
+
+
+
+
+})
+
+            </script>
+</body>
+</html>

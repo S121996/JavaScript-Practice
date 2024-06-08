@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <script src="jquery.js"></script>
+  <button>click</button>
+  <p>Lorem ipsum dolor sit amet.</p>
+<script>
+    /*
+$(document).ready(function(){
+$("button").click(function(){
+    $("p").hide(5000)
+})
+})
+ 
+$.noConflict()
+jQuery(document).ready(function(){
+    jQuery("button").click(function(){
+        jQuery("p").hide(5000)
+})
+})
+*/
+let data=$.noConflict()
+data(document).ready(function(){
+    data("button").click(function(){
+        data("p").hide(5000)
+})
+})
+</script>
+</body>
+</html>

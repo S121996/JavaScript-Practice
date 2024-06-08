@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   <script src="jquery.js"></script>
+    <ul>
+        <li>Home1</li>
+        <li>Home2</li>
+        <li>Home3</li>
+        <li>Home4</li>
+        <li>Home5</li>
+        <li>Home6</li>
+        <li>Home7</li>
+        <li>Home8</li>
+    </ul>
+    <p></p>
+<script>
+$(document).ready(function(){
+    $("li").click(function(){
+        let result=$(this).index()
+        $("p").html(result)
+    })
+})
+
+
+
+
+</script>
+</body>
+</html>

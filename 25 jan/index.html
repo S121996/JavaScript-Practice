@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{padding: 40px; text-align: justify; background: orange;
+overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <button id="a">slideUp</button>
+    <button id="b">Stop</button>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias non quo accusamus itaque veritatis, quasi ad modi quae sequi maiores odit iure minus necessitatibus officia delectus culpa repellat alias fugit praesentium quod dicta. Facilis magni cum quisquam qui amet repudiandae vel perferendis rem illum suscipit dolor, cumque enim vero odio reiciendis molestias iste laborum tempore magnam a tempora facere laboriosam. Fuga eaque esse voluptates ipsam incidunt dolor animi voluptas asperiores quasi aperiam rerum assumenda sed excepturi nobis, in ex repudiandae expedita, numquam placeat magnam reiciendis consequatur suscipit quam aliquam. Aut quaerat et quia ab expedita iusto totam minus voluptatem consectetur ullam, delectus laborum eos aliquid! Et minima beatae repellat consequatur nam natus optio dolorum ipsam quae, error, nulla laudantium. Officia laudantium laborum maxime dolorem iste iure eligendi nam architecto praesentium voluptas? Quas sequi quibusdam corporis amet distinctio ex, delectus rem libero fugiat quae commodi doloribus quidem porro tempora neque ut laboriosam optio sint accusamus? Voluptates eligendi vero similique nostrum temporibus distinctio exercitationem nemo, explicabo quod harum optio quibusdam tempora? Quas voluptatum rerum tenetur quae vitae cumque iste vel adipisci, voluptatem similique, reiciendis mollitia doloribus natus officiis tempore praesentium laudantium magnam quam consectetur quaerat fugiat doloremque officia debitis! Dolorem sint recusandae ipsa neque, hic minima quia esse obcaecati quod accusamus, dolores dolor dolore alias? Aperiam quas vero magnam ducimus voluptatem sint perspiciatis numquam pariatur! Fuga cupiditate blanditiis similique mollitia accusamus! At odit hic vitae eum voluptatum, nostrum exercitationem maxime pariatur, sed iure veritatis dolores praesentium eius dicta nobis aspernatur. Debitis, dignissimos repellat? Beatae libero consectetur, ullam nulla eius dolorum tempore asperiores aut repellat minima omnis, corrupti id cupiditate vel blanditiis ducimus. Doloremque sapiente fugiat molestias. Quasi, aperiam placeat possimus enim maxime numquam consectetur veniam sunt veritatis vel amet fugit doloremque modi libero, animi eaque commodi corrupti atque earum. Quibusdam sapiente incidunt tempore quia sit laborum cum eum fugit error, exercitationem qui. Laudantium aut impedit deserunt delectus itaque mollitia id praesentium dolore reiciendis autem. Magnam perspiciatis reprehenderit rem asperiores vel aliquam dicta, quibusdam molestias exercitationem impedit dolore quod repudiandae laborum corrupti quis dignissimos assumenda maxime cumque animi sit deleniti temporibus? Laborum, tempore similique sunt obcaecati accusamus quidem odit earum. Aut, laboriosam. Consectetur modi earum atque eaque nemo ipsa vel quos beatae qui quia, voluptatum accusantium tenetur ea repellat pariatur optio provident et. Voluptas neque, possimus vitae tenetur perferendis ea cumque necessitatibus excepturi cupiditate, praesentium itaque iste ipsam rem quae non, maiores maxime!
+    </div>
+    <script>
+
+$(document).ready(function(){
+    $("#a").click(function(){
+var result=document.querySelector("button")
+// console.log(result.firstChild.nodeValue);
+if(result.firstChild.nodeValue=='slideUp'){
+    $("div").slideUp(5000)
+    result.firstChild.nodeValue="slideDown"
+}
+else{
+    $("div").slideDown(5000)
+    result.firstChild.nodeValue="slideUp"
+}
+    })
+    $("#b").click(function(){
+        $("div").stop();
+    })
+})
+
+
+
+
+
+
+        /*
+    $(document).ready(function(){
+        $("#a").click(function(){
+            $("div").slideUp(5000)
+        })
+        $("#b").click(function(){
+            $("div").slideDown(5000)
+        })
+    })
+    */ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<form name="frm">
+    Name:
+    <input type="text" name="n" >
+    <span id="myspan1"></span>
+    <br><br>
+    Pass:
+    <input type="password" name="p" >
+    <span id="myspan2"></span>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+    <script src="jquery.js"></script>
+    <script>
+$(document).ready(function(){
+$("button").click(function(){
+    if(document.frm.n.value==''){
+        $("#myspan1").html("name field name")
+        // return false 
+    }
+    if(document.frm.p.value==''){
+        $("#myspan2").html("password field name")
+        // return false
+    }
+    return false
+})
+})
+
+            </script>
+</body>
+</html>

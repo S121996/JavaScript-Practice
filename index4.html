@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+div{height: auto; width: 100%; padding: 40px; box-sizing: border-box;
+background: orange; }
+button{width: 100%; text-align: center; padding: 10px 0px;
+background: purple; color: white;}
+    </style>
+</head>
+<body>
+    <script src="jquery.js"></script>
+<button>slideup</button>
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae magnam, at maxime fuga reiciendis rem omnis ut molestias esse! Aut, reiciendis. Error, nisi libero cum inventore eos placeat exercitationem asperiores tempora? Ullam minima amet sint aut ab! Id repellendus sed cumque eos culpa vitae adipisci doloremque exercitationem, cum, odit aut fugiat consequuntur reprehenderit quia atque. Aperiam nobis magni eos est eius iste natus iure dolores dicta exercitationem ducimus, repudiandae nihil iusto asperiores nostrum veniam amet consectetur. Dolore sit quis quia esse libero, velit accusamus minus amet, doloremque sint fugit totam, accusantium blanditiis facilis cum. Cupiditate voluptas nisi corrupti odio ipsum sapiente similique sequi nemo sit, voluptatibus molestiae rem incidunt hic cumque delectus minus minima maxime vitae sunt dicta. Labore saepe possimus itaque corrupti ratione atque nemo nisi non illo quibusdam praesentium repudiandae rerum, nihil suscipit aperiam ducimus nostrum repellendus eos, nesciunt rem! Necessitatibus error repellendus, earum tenetur esse porro soluta vel non quod laborum aliquam suscipit quae quam reiciendis accusantium nemo fuga quasi, officia sapiente fugiat autem magnam? Earum architecto ipsam laboriosam impedit porro numquam nihil facilis qui voluptatum atque, voluptates id odit eum esse provident placeat molestias labore a? Possimus, alias commodi animi nulla dicta unde ullam, repellat inventore sint aliquam pariatur id ut quia eius similique error quos aut odio et eum totam. Earum quas esse architecto, obcaecati ipsum odio iure? Voluptas rem iure provident non mollitia ipsam tempore est odio harum soluta, delectus aliquid quae, quidem accusantium accusamus facilis magnam assumenda deserunt atque fugit suscipit debitis ad dicta. Soluta facilis earum consequatur unde sed dolore hic eum cupiditate inventore nobis debitis facere eligendi corporis autem, fugiat neque perferendis rerum? Eligendi, autem harum? Nemo eveniet possimus ratione reiciendis ab aliquid minima rerum, ex voluptas quibusdam quaerat facilis exercitationem fugit delectus. Consequatur, hic eum pariatur officia maiores ratione incidunt soluta nihil suscipit est ipsa vitae. Nesciunt sed reiciendis perspiciatis hic repellat ipsum atque similique laboriosam nobis. Eligendi, minus qui quae unde dolores iste vitae quasi libero numquam ab sequi soluta natus delectus praesentium. Deleniti aliquid voluptate alias. Voluptatum temporibus molestias cupiditate eius nulla perferendis ad! Commodi molestias id cupiditate obcaecati natus corporis aut in sequi, iure accusamus rem ut porro fuga, non eveniet magni a, nesciunt sit. Itaque deleniti porro quia neque in autem nulla recusandae saepe corporis similique modi sit nostrum alias quae exercitationem vitae, molestias et asperiores distinctio numquam accusamus aliquam expedita. Quos ut harum dolores.
+</div>
+<script>
+
+
+$(document).ready(function(){
+ $("button").click(function(){
+    var result=document.querySelector("button")
+  if(result.firstChild.nodeValue=='slideup'){
+$("div").slideUp(4000)
+result.innerHTML="slidedown"
+  }
+  else{
+    $("div").slideDown(4000)
+result.innerHTML="slideup"
+  }
+      
+     
+ })
+})
+
+
+    /*
+$(document).ready(function(){
+ $("button").click(function(){
+    // $("div").slideUp(5000);
+    // $("div").slideDown(5000)
+    $("div").slideToggle(5000)
+ })
+})
+
+*/ 
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
